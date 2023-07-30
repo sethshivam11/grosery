@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Archivo&family=Elsie&family=Monoton&family=Spline+Sans+Mono&family=Staatliches&family=Zilla+Slab&display=swap');
+@import url('../home/home.css');
+#navbar{
+    border-bottom: 1px solid lightgrey;
+    position: fixed;
+    padding: 10px 0px;
+    z-index: 5;
+}
+#one{
+    position: relative;
+    top: 86px;
+    width: 100%;
+    height: 1570px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom: 1px solid lightgrey;
+    width: 100%;
+    height: 10%;
+    max-height: 50px;
+    font-size: 25px;
+}
+#gps{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;    
+}
+#gps i{
+    padding-left: 25px;
+}
+#location{
+    margin-left: 25px;
+}
+#gps select{
+    height: 100%;
+    border: none;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 0 5%;
+    transition: all 0.5s ease 0s;
+}
+#search-container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#search-input{
+    width: 90%;
+    height: 80%;
+    padding: 0 3%;
+    outline: none;
+    background: lightgray;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+#find-btn{
+    border-left: 1px solid grey;
+    background: lightgray;
+    width: 50px;
+    height: 80%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 20px;
+    font-weight: 100;
+    text-decoration: none;
+    color: black;
+    display: grid;
+    place-items: center;
+}
+#category{
+    width: 15%;
+    outline: none;
+    height: 100%;
+    border: none;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 0 1%;
+}
+#filters{
+    width: 15%;
+    outline: none;
+    height: 100%;
+    border: none;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    padding: 0 1%;
+}
+#cart-container{
+    width: 8%;
+    display: grid;
+    place-items: center;
+}
+#cart{
+    width: 80px;
+    height: 40px;
+}
+.forth{
+    position: relative;
+}
+.container{
+    height: 100vh;
+}
+#listed-fruits{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+.toggle-fruits{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    height: 50px;
+    width: 50px;
+    padding-left: 12px;
+    padding-top: 6px;
+    font-size: 2rem;
+    border-radius: 15px;
+    border: none;
+    z-index: 4;
+    background: #ffffff6c;
+}
+#ltf{
+    left: 0;
+}
+#rtf{
+    right: 0;
+}
+.list-img{
+    width: 100%;
+    height: 100%;
+}
+.slide{
+    display: none;
+    width: 100vw;
+    height: 60vh;
+    transition: all 0.5s ease 0s;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 5rem;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+.slide h1{
+    display: block;
+    z-index:2;
+    border: 1px solid grey;
+    padding: 10px 25px;
+}
+.slide p{
+    font-size: 2rem;
+    display: block;
+}
+#banana{
+    background: url("../rsc/banana.jpg") center center/cover;
+}
+#peach{
+    background: url("../rsc/peach.jpg") center center/cover;
+}
+#pomegranate{
+    background: url("../rsc/pomegranate.jpg") center center/cover;
+}
+#strawberry{
+    background: url("../rsc/strawberry.jpg") center center/cover;
+}
+#guava{
+    background: url("../rsc/guava.jpg") center center/cover;
+}
+#grapes{
+    background: url("../rsc/grapes.jpg") center center/cover;
+}
+#coconut{
+    background: url("../rsc/coconut.jpg") center center/cover;
+}
+#apple{
+    background: url("../rsc/apple.jpg") center center/cover;
+}
+#muskmelon{
+    background: url("../rsc/muskmelon.jpg") center center/cover;
+}
+#watermelon{
+    background: url("../rsc/watermelon.jpg") center center/cover;
+}
+#kiwi{
+    background: url("../rsc/kiwi.jpg") center center/cover;
+}
+#lemon{
+    background: url("../rsc/lemon.jpg") center center/cover;
+}
+#potato{
+    background: url("../rsc/potato.jpg") center center/cover;
+}
+#tomato{
+    background: url("../rsc/tomato.jpg") center center/cover;
+}
+#pumpkin{
+    background: url("../rsc/pumpkin.jpg") center center/cover;
+}
+#pepper{
+    background: url("../rsc/pepper.jpg") center center/cover;
+}
+#garlic{
+    background: url("../rsc/garlic.jpg") center center/cover;
+}
+#onion{
+    background: url("../rsc/onion.jpg") center center/cover;
+}
+#carrot{
+    background: url("../rsc/carrot.jpg") center center/cover;
+}
+#chilli{
+    background: url("../rsc/chilli.jpg") center center/cover;
+}
+#ginger{
+    background: url("../rsc/ginger.jpg") center center/cover;
+}
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from{opacity: 0.4; transform: translateX(500px);}
+    to{opacity: 1; transform: translateX(0px)}
+}
+.poster{
+    width: 400px;
+    border: 1px solid grey;
+    margin: 15px;
+    cursor: pointer;
+}
+.horizontal{
+    width: 850px;
+    margin-left: 30px;
+}
+#listed-veggies{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+}
+.veggie{
+    display: none;
+}
+#ltv{
+    left: 0;
+}
+#rtv{
+    right: 0;
+}
+/* #cart i{
+    padding-top: 8px;
+    color: black;
+    padding-left: 25px;
+} */
+.sort-container{
+    display: none;
+}
+/* #cart:hover{
+    background: green;
+    color: white;
+} */
+.toggle-veggies{
+    display: flex;
+    position: absolute;
+    text-align: center;
+    bottom: 280px;
+    height: 50px;
+    width: 50px;
+    padding-left: 12px;
+    padding-top: 6px;
+    font-size: 2rem;
+    border-radius: 15px;
+    border: none;
+    z-index: 4;
+    background: #ffffff6c;
+}
+.cart-btn{
+    width: 100px;
+    height: 50px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    background: #00000088;
+    color: white;
+    font-weight: bold;
+}
+.cart-btn:hover{
+    color: rgb(39, 39, 39);
+    background: #ffffff8a;
+    transform: scale(1.1);
+}
+@media only screen and (max-width: 600px) {
+    .head{
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #navbar{
+        padding: 0;
+        height: 160px;
+        width: 100%;
+        max-width: 600px;
+        position: fixed;
+        display: flex;
+        transition: all 0.5s ease-in-out 0s;
+        text-align: justify;
+        padding-top: 70px;
+    }
+    .list{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .list li{
+        width: 100%;
+    }
+    .items{
+        width: 90%;
+        margin: 0 5%;   
+    }
+    #menu-toggle{
+        display: block;
+        position: absolute;
+        background: #ffffff;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        font-size: 25px;
+        color: grey;
+        border: none;
+        border-radius: 6px;
+        transition: all 0.5s ease 0s;
+        margin: 10px;
+    }
+    #menu-toggle i{
+        z-index: 2;
+        transition: all 0s ease 0s;
+    }
+    #search{
+        top: 295px;
+        right: 25px;
+    }
+    .poster{
+        margin: 0;
+        margin-left: 15px;
+        width: 90vw;
+        margin-bottom: 5vw;
+    }
+    .horizontal{
+        width: 90vw;
+        margin: 0;
+        margin-left: 5vw;
+    }
+    #one{
+        top: 0;
+        width: 100%;
+        height: 490vw;
+    }
+    #listed-fruits{
+        padding: 15px 0;
+    }
+    .slide{
+        margin: 10px 0;
+    }
+    .slide h1{
+        font-size: 3rem;
+    }
+    .toggle-fruits{
+        top: 250px;
+    }
+    .toggle-veggies{
+        bottom: 280px;
+    }
+    #location{
+        display: none;
+    }
+    #gps{
+        display: none;
+    }
+    #search-container{
+        display: flex;
+        width: 80%;
+    }
+    #search-input{
+        width: 63%;
+        margin-left: 12%;
+    }
+    #find-btn{
+        margin-right: 3%;
+    }
+    #category{
+        display: none;
+        width: 35%;
+        margin-left: 35px;
+    }
+    .sort-container{
+        display: flex;
+        width: 10%;
+        height: 100%;
+        border-right: 1px solid lightgray;
+        border-left: 1px solid lightgray;
+    }
+    #sort{
+        margin: 0;
+        margin: 7px 4px;
+        color: black;
+        width: 30px;
+        border-radius: 5px;
+    }
+    #sort:hover{
+        color: white;
+    }
+    #cart-container{
+        width: 10%;
+    }
+    #cart{
+        width: 35px;
+        height: 30px;
+        border-radius: 8px;
+        color: black;
+    }
+    #cart:hover{
+        color: white;
+    }
+    #filters{
+        display: none;
+        width: 30%;
+    }
+    #menu-toggle{
+        margin-left: 0;
+        padding-left: 8px;
+        width: 30px;
+    }
+    #menu{
+        justify-content: center;
+    }
+}

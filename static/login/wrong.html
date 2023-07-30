@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | SignUp</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/a48151181e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="../rsc/login-img.jpg" id="log-img">
+        <form method="post" id="main-form">
+            <div id="login-div">
+                <img src="../rsc/user.png" id="user">
+            </div>
+            <div class="form-div">
+                <input type="email" class="login-input" name="email" placeholder="Email" id="mail" required>
+                <input type="phone" class="signup-input" name="phone" placeholder="Mobile" id="new-phone">
+                <input type="password" class="login-input" id="old-password" name="password" placeholder="Password"
+                    minlength="8" required>
+                <input type="password" class="signup-input" placeholder="Confirm Password" id="confirm-password">
+                <button id="signup-btn" onclick="signupcheck()">New User ?</button>
+                <button id="login-btn" onclick="logincheck()">LogIn</button>
+                <div id="icon-div">
+                    <img src="../rsc/google.svg" class="icon">
+                    <img src="../rsc/microsoft.svg" class="icon">
+                    <img src="../rsc/apple.svg" class="icon">
+                </div>
+            </div>
+            <p id="response"><img src="../rsc/tick.svg" id="tick"> &nbsp;Your Response has been Recorded</p>
+            <button type="submit" id="submit-btn">Login</button>
+        </form>
+    </div>
+    <section class="one">
+        <div>
+            <img src="../rsc/delivery.svg">
+        </div>
+        <span>
+            <h1>&#169; SA Grocery</h1>
+            <p>&#64; Follow Us</p>
+            <a href="https://whatsapp.com/" target="_blank"><i class="fa fa-whatsapp"></i></a>
+            <a href="https://instagram.com/_seth_shivam" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://twitter.com/shivam700216" target="_blank"><i class="fa fa-twitter"></i></a>
+            <p>All rights reserved 2023.</p>
+        </span>
+    </section>
+    <script src="login.js"></script>
+    <script>alert("Incorrect Password. Please try again.")</script>
+</body>
+
+</html>

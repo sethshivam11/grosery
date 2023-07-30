@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | Grocery</title>
+    <link rel="stylesheet" href="../cart/cart.css">
+    <script src="https://kit.fontawesome.com/a48151181e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="search">
+        <input type="text" placeholder="Search">
+        <button id="search-btn"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="container">
+        <button id="menu-toggle"><i class="fa fa-bars"></i></button>   
+        <nav id="navbar">
+            <span class="head">Grocery</span>
+            <ul class="list">
+                <li><a class="items" href="/"><i class="fa fa-home"></i>&nbsp; Home</a>
+                </li>
+                <li><a class="items" href="/shop"><i class="fa fa-shopping-basket"></i>&nbsp; Shop</a>
+                </li>
+                <li><a class="items" href="/about"><i class="fa fa-info-circle"></i>&nbsp; About Us</a>
+                </li>
+                <li><a class="items" href="/support"><i class="fa fa-user"></i>&nbsp; Support</a></li>
+                <li><a class="active items" id="home-btn"><i class="fa fa-shopping-cart"></i> &nbsp;Cart</a></li>
+                <li><a class="items" id="search-toggle"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</a></li>
+            </ul>
+        </nav>
+        <section id="first">
+            <h1 id="cart-head">Shopping Cart</h1>
+            <div id="products">
+                <div class="product">
+                <img src="../rsc/tomato.jpg" class="product-img">
+                <h3 class="product-name">Tomato</h3>
+                <p class="product-description">$ 10/Kg</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 10</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+                <div class="product">
+                <img src="../rsc/banana.jpg" class="product-img">
+                <h3 class="product-name">Banana</h3>
+                <p class="product-description">$ 1/Dozens</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 1</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+                <div class="product">
+                <img src="../rsc/watermelon.jpg" class="product-img">
+                <h3 class="product-name">Watermelon</h3>
+                <p class="product-description">$ 1.2/Kg</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 1.2</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+                <div class="product">
+                <img src="../rsc/peach.jpg" class="product-img">
+                <h3 class="product-name">Peach</h3>
+                <p class="product-description">$ 12/Kg</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 12</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+                <div class="product">
+                <img src="../rsc/strawberry.jpg" class="product-img">
+                <h3 class="product-name">Strawberry</h3>
+                <p class="product-description">$ 11/Kg</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 11</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+                <div class="product">
+                <img src="../rsc/chilli.jpg" class="product-img">
+                <h3 class="product-name">Chilli</h3>
+                <p class="product-description">$ 3/Kg</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 3</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+                <div class="product">
+                <img src="../rsc/pumpkin.jpg" class="product-img">
+                <h3 class="product-name">Pumpkin</h3>
+                <p class="product-description">$ 2/Kg</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 2</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+                <div class="product">
+                <img src="../rsc/coconut.jpg" class="product-img">
+                <h3 class="product-name">Coconut</h3>
+                <p class="product-description">$ 1.8/Piece</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 1.8</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+                <div class="product">
+                <img src="../rsc/ginger.jpg" class="product-img">
+                <h3 class="product-name">Ginger</h3>
+                <p class="product-description">$ 3/Kg</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 3</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+                <div class="product">
+                <img src="../rsc/grapes.jpg" class="product-img">
+                <h3 class="product-name">Grapes</h3>
+                <p class="product-description">$ 2.5/Kg</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 2.5</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+                <div class="product">
+                <img src="../rsc/potato.jpg" class="product-img">
+                <h3 class="product-name">Potato</h3>
+                <p class="product-description">$ 0.8/Kg</p>
+                <div class="product-pricing">
+                    <button class="decrease btn">-</button>
+                    <h2 class="product-price">$ 0.8</h2>
+                    <button class="increase btn" >+</button>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section id="total">
+                <h1 id="items-count">Total: $ 48.3<p>11 Items</p></h1>
+                
+            <button id="order-btn">Order Now</button>
+        </section>
+</body>
+<script src="cart.js"></script>
+</html>

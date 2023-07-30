@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Grocery</title>
+    <link rel="stylesheet" href="shop.css">
+    <script src="https://kit.fontawesome.com/a48151181e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <button id="menu-toggle"><i class="fa fa-bars"></i></button>   
+        <nav id="navbar">
+            <span class="head">Grocery</span>
+            <ul class="list">
+                <li><a class="items" href="/"><i class="fa fa-home"></i>&nbsp; Home</a>
+                </li>
+                <li><a class="active items" id="home-btn"><i class="fa fa-shopping-basket"></i>&nbsp; Shop</a>
+                </li>
+                <li><a class="items" href="/about"><i class="fa fa-info-circle"></i>&nbsp; About Us</a>
+                </li>
+                <li><a class="items" href="/support"><i class="fa fa-user"></i>&nbsp; Support</a></li>
+            </ul>
+        </nav>
+        <div id="search">
+            <input type="text" placeholder="Search">
+            <button id="search-btn"><i class="fa fa-search"></i></button>
+        </div>
+        <section id="one">
+            <div class="menu">
+                <div id="gps">
+                    <i class="fa fa-location-arrow"></i>
+                <select name="location" id="location">
+                    <option>Mumbai</option>
+                    <option selected>New Delhi</option>
+                    <option>Bangalore</option>
+                    <option>Kolkata</option>
+                    <option>Chennai</option>
+                    <option>Jammu & Kashmir</option>
+                </select>
+            </div>
+            <div id="search-container">
+                <input type="text" name="search" placeholder="Start Shopping" id="search-input">
+                <a id="find-btn" href="#one"><i class="fa fa-search"></i></a>
+            </div>
+            <select name="category" id="category">
+                <option>Fruits</option>
+                <option>Vegetables</option>
+                <option>Beverages</option>
+                <option>Dairy Products</option>
+                <option>Snacks</option>
+                <option>Bakery</option>
+                <option>Kitchen Needs</option>
+                <option>Beauty</option>
+                <option>Hygiene</option>
+                <option>Baby Care</option>
+            </select>
+            <select name="filters" id="filters">
+                <option>Relevance</option>
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Popularity</option>
+            </select>
+            <div class="sort-container">
+                <a class="items" id="sort"><i class="fa fa-filter"></i></a>
+            </div>
+            <div id="cart-container">
+                <a class="items" id="cart" href="/cart"><i class="fa fa-shopping-cart"></i></a>
+            </div>
+            </div>
+            <div id="listed-fruits">
+                <button class="toggle-fruits" id="ltf" onclick="plusSlideF(-1)">&lt;</button>
+            <div class="fruit slide fade" id="banana"><h1>Banana</h1><p>$1/Dozens</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="fruit slide fade" id="peach"><h1>Peach</h1><p>$12/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="fruit slide fade" id="strawberry"><h1>Strawberry</h1><p>$11/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="fruit slide fade" id="pomegranate"><h1>Pomegranate</h1><p>$5/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="fruit slide fade" id="guava"><h1>Guava</h1><p>$2/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="fruit slide fade" id="grapes"><h1>Grapes</h1><p>$2.5/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="fruit slide fade" id="apple"><h1>Apple</h1><p>$3.5/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="fruit slide fade" id="coconut"><h1>Coconut</h1><p>$1.8/Piece</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="fruit slide fade" id="kiwi"><h1>Kiwi</h1><p>$10/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="fruit slide fade" id="muskmelon"><h1>Muskmelon</h1><p>$1/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="fruit slide fade" id="watermelon"><h1>Watermelon</h1><p>$1.2/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <button class="toggle-fruits" id="rtf" onclick="plusSlideF(1)">&gt;</button>
+            </div>
+            <img src="../rsc/poster.png" class="poster">
+            <img src="../rsc/coming.jpg" class="poster horizontal">
+            <div id="listed-veggies">
+                <button class="toggle-veggies" id="ltv" onclick="plusSlideV(-1)">&lt;</button>
+            <div class="veggie slide fade" id="lemon"><h1>Lemon</h1><p>$4/Kg</p><button type="submit" method="post" class="cart-btn">Add to Cart</button></div>
+            <div class="veggie slide fade" id="potato"><h1>Potato</h1><p>$0.8/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="veggie slide fade" id="tomato"><h1>Tomato</h1><p>$10/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="veggie slide fade" id="pumpkin"><h1>Pumpkin</h1><p>$2/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="veggie slide fade" id="pepper"><h1>Bell Pepper</h1><p>$2/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="veggie slide fade" id="garlic"><h1>Garlic</h1><p>$4/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="veggie slide fade" id="ginger"><h1>Ginger</h1><p>$3/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="veggie slide fade" id="onion"><h1>Onion</h1><p>$1/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="veggie slide fade" id="carrot"><h1>Carrot</h1><p>$2/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <div class="veggie slide fade" id="chilli"><h1>Chilli</h1><p>$3/Kg</p><button class="cart-btn">Add to Cart</button></div>
+            <button class="toggle-veggies" id="rtv" onclick="plusSlideV(1)">&gt;</button>
+            </div>
+        </section>
+        <section class="forth">
+            <div>
+                <img src="../rsc/delivery.svg">
+            </div>
+            <span><h1>&#169; SA Grocery</h1>
+                <p>&#64; Follow Us</p>
+                <a href="https://wa.me/+917240375978" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://instagram.com/_seth_shivam" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://twitter.com/shivam700216" target="_blank"><i class="fa fa-twitter"></i></a>
+                <p>All rights reserved 2023.</p>
+            </span>
+        </section>
+    </div>
+</body>
+<script src="shop.js"></script>
+</html>

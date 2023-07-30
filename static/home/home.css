@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Archivo&family=Elsie&family=Monoton&family=Spline+Sans+Mono&family=Staatliches&family=Zilla+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgb(170, 170, 168);
+}
+
+.first{
+    width: 100%;
+    height: 100vh;
+    background: #208b3a;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    background: #fff;
+    z-index: 3;
+}
+.head{
+    width: 30%;
+    font-weight: bold;
+    font-size: 4rem;
+    font-family: 'Agdasima', cursive;
+    padding-left: 1rem;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 60%;
+    font-family: 'Zilla slab', cursive;
+}
+.items{
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    transition: all 0.2s ease 0s;
+}
+.items:hover{
+    color: #fff;
+    background: #208b3a;
+}
+.welcome{
+    color: #f8e16c;
+    font-size: 5rem;
+    text-align: center;
+    display: block;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+#bg{
+    width: 100%;
+    height: 100%;
+}
+#grocery{
+    background: #208b3a;
+    position: absolute;
+    display: inline-block;
+    z-index: 2;
+    border-radius: 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: 10rem;
+    font-family: 'Elsie', cursive;
+    margin-left: 24%;
+    margin-top: 14%;
+    padding: 10px;
+}
+.second{
+    background: #b7efc5;
+    height: fit-content;
+    width: 100%;
+    color: #155d27;
+    font-family: 'Elsie', cursive;
+}
+.third{
+    background: #155d27;
+    height: fit-content;
+    /* width: 100vw; */
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Elsie', cursive;
+    padding: 50px 0px;
+}
+.third h1{
+    margin-bottom: 30px;
+    width: 100%;
+}
+.third span{
+    display: block;
+    padding: 0 400px;
+}
+.btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    margin: 0 15px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 3px  2px rgb(0, 44, 0);
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 80px;
+}
+.text h1{
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+.text img{
+    width: 470px;
+    height: 300px;
+    border-radius: 50px;
+}
+.text span{
+    width: 400px
+}
+.text:nth-child(2){
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid grey;
+}
+.collage{
+    height: fit-content;
+    width: fit-content;
+    margin-left: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+}
+.collage h1{
+    width: 100%;
+}
+.big{
+    width: 90%;
+    height: 300px;
+    background: url('../rsc/img3.jpg') no-repeat center/cover;
+    border-radius: 30px;
+    margin: 16px 0;
+}
+.small{
+    width: 44%;
+    height: 300px;
+    border-radius: 30px;
+    margin: 8px 8px;
+    margin-bottom: 100px;
+}
+.tomato{
+    margin: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.forth{
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-family: 'Elsie', cursive;
+    text-align: center;
+}
+.forth a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+.forth h1, .forth img, .forth p{
+    margin: 20px 0;
+}
+.forth p{
+    margin-right: 2px;
+}
+#search{
+    display: none;
+    position: fixed;
+    width: 350px;
+    height: 50px;
+    top: 100px;
+    right: 78px;
+    z-index: 3;
+    background: #fff;
+    border-radius: 10px;
+}
+#search input{
+    padding: 5px 0;
+    width: 80%;
+    height: 80%;
+    margin: 0 10px;
+    outline: none;
+    border: none;
+
+}
+#search-btn{
+    font-size: 25px;
+    border: none;
+    background: transparent;
+    border-left: 1px solid lightgrey;
+    width: 20%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.active{
+    color: #fff;
+    background: #208b3a;
+}
+#menu-toggle{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    #navbar{
+        width: 100%;
+        max-width: 600px;
+        height: 230px;
+        position: fixed;
+        display: flex;
+        transform: translateY(-120%);
+        text-align: justify;
+        transition: all 0.5s ease-in-out 0s;
+        padding-top: 85px;
+    }
+    .head{
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0;
+        left: 115px;
+        width: 100%;
+    }
+    .list{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+    .list li{
+        width: 100%;
+    }
+    .items{
+        width: 90%;
+        margin: 0 5%;   
+    }
+    #grocery{
+        width: 220px;
+        font-size: 50px;
+        margin-left: 80px;
+        margin-top: 350px;
+    }
+    .first img{
+        display: none;
+    }
+    .first{
+        background: url("../rsc/bg.jpg") 10% center/cover;
+    }
+    .text{
+        flex-direction: column;
+    }
+    .text img{
+        width: 350px;
+        height: 200px;
+        margin-left: 5px;
+        border-radius: 30px;
+    }
+    .text:nth-child(2){
+        margin-bottom: 25px;
+    }
+    .tomato{
+        margin: 0px;
+        margin-top: 50px;
+    }
+    .tomato img:nth-child(1){
+        display: none;
+    }
+    .tomato img:nth-child(5){
+        display: none;
+    }
+    .tomato img:nth-child(3){
+        transform: scale(0.8);
+    }
+    .tomato img:nth-child(4){
+        transform: scale(0.6);
+    }
+    .tomato img:nth-child(2){
+        transform: scale(0.6);
+    }
+    .third span{
+        padding: 0;
+    }
+    .text{
+        padding: 15px 0;
+        text-align: center;
+    }
+    .text h1{
+        margin: 20px 15px;
+    }
+    .text p{
+        margin: 0 15px;
+        margin-bottom: 20px;
+    }
+    .collage{
+        margin: 0 20px;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+    .big{
+        width: 100%;
+    }
+    .small{
+        width: 45%;
+        height: 10%;
+        margin-bottom: 25px;
+    }
+    .collage h1{
+        font-size: 2rem;
+    }
+    #menu-toggle{
+        display: block;
+        position: absolute;
+        background: #ffffff62;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        width: 40px;
+        height: 40px;
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 25px;
+        color: rgba(94, 94, 94, 0.671);
+        border: none;
+        border-radius: 6px;
+        transition: all 0.5s ease 0s;
+        margin: 10px;
+    }
+    #menu-toggle i{
+        z-index: 2;
+        transition: all 0s ease 0s;
+    }
+    #search{
+        top: 295px;
+        right: 25px;
+    }
+}

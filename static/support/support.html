@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Grocery</title>
+    <link rel="stylesheet" href="support.css">
+    <script src="https://kit.fontawesome.com/a48151181e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="search">
+        <input type="text" placeholder="Search">
+        <button id="search-btn"><i class="fa fa-search"></i></button>
+    </div>
+    <div id="container">
+        <button id="menu-toggle"><i class="fa fa-bars"></i></button>   
+        <nav id="navbar">
+            <span class="head">Grocery</span>
+            <ul class="list">
+                <li><a href="/" class="items"><i class="fa fa-home"></i>&nbsp; Home</a>
+                </li>
+                <li><a  href="/shop" class="items"><i class="fa fa-shopping-basket"></i>&nbsp; Shop</a>
+                </li>
+                <li><a  href="/about" class="items"><i class="fa fa-info-circle"></i>&nbsp; About Us</a>
+                </li>
+                <li><a class="active items" id="home-btn"><i class="fa fa-user"></i>&nbsp; Support</a></li>
+                <li><a  href="/cart" class="items"><i class="fa fa-shopping-cart"></i> &nbsp;Cart</a></li>
+                <li><a class="items" id="search-toggle"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</a></li>
+            </ul>
+        </nav>
+        <section id="first">
+            <div class="content">
+            <h1 id="phone-only">Support</h1>
+            <form method="post" onsubmit="handleSubmit(event)" id="form">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="number" name="phone" id="phone" placeholder="Mobile">
+                <textarea name="concern" id="message" cols="30" rows="8" placeholder="Describe your concern..."></textarea>
+                <button id="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+        </section>
+    </div>
+</body>
+<script src="support.js"></script>
+</html>
